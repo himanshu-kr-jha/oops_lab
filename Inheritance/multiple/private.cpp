@@ -29,6 +29,7 @@ int main() {
 
     // Accessing private members through Derived class method
     obj.displayDerived();  // Accessible (private in MultipleInheritancePrivate)
+    obj.display2();
 
     return 0;
 }
