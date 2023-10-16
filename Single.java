@@ -4,7 +4,7 @@ public class Single {
         //Single singleInstance = new Single();  // Create an instance of the outer class
         Gravitational G = new Gravitational();  // Create an instance of the inner class
         G.Force();
-        G.Gravity()
+        G.Gravity();
     }
 
     
