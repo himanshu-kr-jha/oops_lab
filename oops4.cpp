@@ -1,23 +1,24 @@
 #include <iostream>
 #include <string>
+using namespace std;
 class marks_average; // Forward declaration of the friend class
 class Student {
 private:
-    std::string name;
+    string name;
     float marks[5]; // Assuming 5 subjects
 public:
     void Get_data() {
-        std::cout << "Enter student name: ";
-        std::cin >> name;
-        std::cout << "Enter marks for 5 subjects:\n";
+        cout << "Enter student name: ";
+        cin >> name;
+        cout << "Enter marks for 5 subjects:\n";
         for (int i = 0; i < 5; i++) {
-            std::cout << "Subject " << i + 1 << ": ";
-            std::cin >> marks[i];
+            cout << "Subject " << i + 1 << ": ";
+            cin >> marks[i];
         }
     }
 
     void display() {
-        std::cout << "Student Name: " << name << std::endl;
+        cout << "Student Name: " << name << endl;
     }
  friend class marks_average;
 };
@@ -29,7 +30,7 @@ public:
             sum += student.marks[i];
         }
         float average = sum / 5;
-        std::cout << "Average Marks: " << average << std::endl;
+        cout << "Average Marks: " << average << endl;
     }
 };
 

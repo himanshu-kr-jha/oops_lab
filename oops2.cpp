@@ -1,15 +1,16 @@
 #include <iostream>
 #include <string>
+using namespace std;
 class BankAccount {
 private:
-    std::string name;
-    std::string accountNumber;
-    std::string accountType;
+    string name;
+    string accountNumber;
+    string accountType;
     double balance;
 
 public:
     // Constructor to initialize data members
-    BankAccount(const std::string& _name, const std::string& _accountNumber, const std::string& _accountType, double _balance) {
+    BankAccount(const string& _name, const string& _accountNumber, const string& _accountType, double _balance) {
         name = _name;
         accountNumber = _accountNumber;
         accountType = _accountType;
@@ -19,29 +20,29 @@ public:
     void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
-            std::cout << "Deposited $" << amount << ". New balance: $" << balance << std::endl;
+            cout << "Deposited $" << amount << ". New balance: $" << balance << endl;
         } else {
-            std::cout << "Invalid amount for deposit. Amount must be greater than 0." << std::endl;
+            cout << "Invalid amount for deposit. Amount must be greater than 0." << endl;
         }
     }
  // Function to withdraw money
     void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
-            std::cout << "Withdrew $" << amount << ". New balance: $" << balance << std::endl;
+            cout << "Withdrew $" << amount << ". New balance: $" << balance << endl;
         } else if (amount > balance) {
-            std::cout << "Insufficient funds for withdrawal." << std::endl;
+            cout << "Insufficient funds for withdrawal." << endl;
         } else {
-            std::cout << "Invalid amount for withdrawal. Amount must be greater than 0." << std::endl;
+            cout << "Invalid amount for withdrawal. Amount must be greater than 0." << endl;
         }
     }
 
     // Function to display account details
     void displayDetails() {
-        std::cout << "Name: " << name << std::endl;
-        std::cout << "Account Number: " << accountNumber << std::endl;
-        std::cout << "Account Type: " << accountType << std::endl;
-        std::cout << "Balance: $" << balance << std::endl;
+        cout << "Name: " << name << endl;
+        cout << "Account Number: " << accountNumber << endl;
+        cout << "Account Type: " << accountType << endl;
+        cout << "Balance: $" << balance << endl;
     }
 };
 int main() {
