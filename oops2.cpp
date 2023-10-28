@@ -52,5 +52,7 @@ int main() {
     account.deposit(500.0);
     account.withdraw(200.0);
     account.displayDetails();
+    cout << "Made by Himanshu Kumar Jha \n";
+
    return 0;
 }

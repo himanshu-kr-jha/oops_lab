@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 class c_polygon {
 public:
     virtual double area() {

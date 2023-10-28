@@ -4,7 +4,7 @@ using namespace std;
 int fun_over(int n){
     return (n<0)?-n:n;
 }
-float fun_over(float n){
+double fun_over(double n){
     if(n<0)
         return -n;
 }
@@ -15,6 +15,5 @@ int main(){
     float b;
     cin>>a>>b;
     cout<<"absolute value of input are "<<fun_over(a);
-    cout<<" and "<<fun_over(b);
-    
+    cout<<" and "<<fun_over(b)<<endl;   
 }

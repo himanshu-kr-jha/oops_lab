@@ -1,7 +1,5 @@
 #include <iostream>
-
 using namespace std;
-
 class Student {
 private:
   string name;
@@ -45,6 +43,7 @@ int main() {
 
   friend_func1(s1);
   friend_func2(s1, 95, 85, 90);
+  cout << "Made by Himanshu Kumar Jha \n";
 
   return 0;
 }

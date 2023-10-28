@@ -39,5 +39,7 @@ int main() {
     student.Get_data();
     student.display();
     marks_average::calculateAverage(student);
+    cout << "Made by Himanshu Kumar Jha \n";
+
     return 0;
 }

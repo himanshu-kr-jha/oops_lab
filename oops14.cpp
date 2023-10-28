@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-
+using namespace std;
 // Function to calculate the area of a square
 double area(double side) {
     double result = side * side;

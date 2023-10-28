@@ -17,4 +17,6 @@ int main(){
     ZeroSmaller(&a,&b);
     cout<<"After calling function"<<endl;
     cout << "a:"<< a <<", b:"<< b <<endl;
+    cout << "Made by Himanshu Kumar Jha \n";
+
 }

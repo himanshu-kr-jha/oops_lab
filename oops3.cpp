@@ -27,11 +27,14 @@ int main() {
     Box box1(2.0, 3.0, 4.0);
     Box box2(1.5, 2.5, 3.5);
     Box box3(3.0, 4.0, 5.0);
+    Box box4(4.0,1.0,0.5);
 // Calculate and display the volume of each box
     cout << "Volume of Box 1: " << box1.calculateVolume() << endl;
     cout << "Volume of Box 2: " << box2.calculateVolume() << endl;
     cout << "Volume of Box 3: " << box3.calculateVolume() << endl;
+    cout << "Volume of Box 4: " << box4.calculateVolume() << endl;
    // Display the total number of objects created
     cout << "Total number of Box objects created: " << Box::getCount() << endl;
+    cout << "Made by Himanshu Kumar Jha \n";
    return 0;
 }
